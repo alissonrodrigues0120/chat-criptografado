@@ -98,13 +98,4 @@ O receptor aceita `session_key` cifradas com RSA e também, para fins de simula�
 - Logs de debug: os clientes imprimem `RAW RECEIVED: ...` para facilitar a inspeção do JSON recebido e detectar problemas de formato.
 - Fluxo de teste sugerido: inicie servidor; conecte dois clientes; no cliente A execute `connect B` seguido de uma mensagem; observe o handshake de troca de chave e o envio de mensagens cifradas.
 
----
 
-## Recomendações de segurança para produção
-
-- Use TLS para proteger o canal de transporte e evitar que o servidor globalmente visualize os pacotes.
-- Troque RSA por ECDH+KDF para troca de chaves mais eficiente e com forward secrecy (ex: X25519 + HKDF).
-- Use AEAD (AES-GCM ou ChaCha20-Poly1305) para garantir confidencialidade e integridade autenticada das mensagens.
-- Adicione mecanismos de autenticação e verificação de identidade (certificados ou assinatura) para evitar ataques de man-in-the-middle.
-
----
