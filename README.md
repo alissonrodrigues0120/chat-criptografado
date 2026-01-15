@@ -26,14 +26,14 @@ pip install pycryptodome
 2. Inicie o servidor a partir da raiz do projeto:
 
 ```bash
-python  server.serverchat
+python  server/serverchat.py
 ```
 
 3. Em terminais separados, inicie clientes (recomendado executar com `-m`):
 
 ```bash
-python  clients.client1 Alice
-python  clients.client2 Bob
+python  clients/client1.py
+python  clients/client2.py
 ```
 
 Observação: executar como módulo (`python -m ...`) evita manipulação manual de `sys.path` e é a forma recomendada.
