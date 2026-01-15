@@ -20,20 +20,20 @@ Como compilar/rodar:
 1. Instale dependências (requer Python 3.8+):
 
 ```bash
-python -m pip install pycryptodome
+pip install pycryptodome
 ```
 
 2. Inicie o servidor a partir da raiz do projeto:
 
 ```bash
-python -m server.serverchat
+python  server.serverchat
 ```
 
 3. Em terminais separados, inicie clientes (recomendado executar com `-m`):
 
 ```bash
-python -m clients.client1 Alice
-python -m clients.client2 Bob
+python  clients.client1 Alice
+python  clients.client2 Bob
 ```
 
 Observação: executar como módulo (`python -m ...`) evita manipulação manual de `sys.path` e é a forma recomendada.
